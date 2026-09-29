@@ -30,8 +30,8 @@ alvinmunk/
 
 1. **Branch**: `feat/`, `fix/`, `chore/` prefixed branches off `main`
 2. **Commits**: Conventional commits preferred (`feat:`, `fix:`, `test:`, `docs:`, `chore:`)
-3. **Code style**: Prettier (JS/TS) + `cargo fmt` + `cargo clippy -D warnings` (Rust)
-4. **Testing**: All tests must pass before PR — `pnpm contracts:test && pnpm test && pnpm typecheck`
+3. **Code style**: Prettier (JS/TS) + `cargo fmt` + `cargo clippy --all-targets -- -D warnings` (Rust)
+4. **Testing**: All tests must pass before PR — run `pnpm check` (fmt check, clippy, contract tests, typecheck, lint, test)
 
 ## Pull Request Process
 
@@ -44,7 +44,7 @@ alvinmunk/
 ## Contract Development
 
 - Run `cd contracts && cargo test` for contract tests
-- Run `cd contracts && cargo clippy -D warnings` before committing
+- Run `cd contracts && cargo clippy --all-targets -- -D warnings` before committing
 - The live testnet contract ids are in the [README](README.md#deployed-contracts-stellar-testnet)
 - Use `scripts/deploy-testnet.sh` for fresh deploys
 

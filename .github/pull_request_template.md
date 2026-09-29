@@ -17,10 +17,7 @@
 
 ## Testing
 
-- [ ] Contract tests pass (`pnpm contracts:test`)
-- [ ] Web tests pass (`pnpm test`)
-- [ ] Typecheck passes (`pnpm typecheck`)
-- [ ] Lint passes (`pnpm lint`)
+- [ ] All gates pass (`pnpm check`)
 
 ## Screenshots (if UI change)
 
