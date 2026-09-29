@@ -28,6 +28,7 @@
 
 ## Checklist
 
+- [ ] `pnpm check` passes locally (mirrors the CI `contracts` and `web` gates)
 - [ ] My code follows the project's code style
 - [ ] I've updated documentation as needed
 

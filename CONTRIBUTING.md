@@ -10,6 +10,8 @@ pnpm install                          # install JS deps
 pnpm contracts:build                  # build Soroban contracts (wasm32)
 pnpm contracts:test                   # run Rust contract tests
 pnpm typecheck && pnpm test           # TS typecheck + vitest
+pnpm contracts:fmt:check              # cargo fmt --all -- --check
+pnpm contracts:lint                   # cargo clippy --all-targets -- -D warnings
 pnpm check                            # every gate the CI contracts + web jobs run
 pnpm dev                              # start dev server (turbo → next dev)
 ```
